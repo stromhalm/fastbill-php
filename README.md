@@ -1,6 +1,6 @@
 #Fastbill
 
-Dies ist eine kleine Library für die Fastbill API.
+Dies ist eine kleine Library um mittels PHP mit der Fastbill API kommunizieren zu können.
 So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill-Daten zugreifen und diese verarbeiten. 
 
 Die [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API Dokumentation") finden Sie die Struktur der einzelnen Requests. Diese müssen in Form von Arrays an die Klasse übergeben werden. Am einfachsten ist es, sich an die **Request - JSON** Beispiele aus der Dokumentation zu halten.
