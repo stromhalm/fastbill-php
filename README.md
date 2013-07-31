@@ -1,19 +1,19 @@
 #Fastbill
 
 Dies ist eine kleine Library für die Fastbill API.
-So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill Daten zugreifen und diese verarbeiten. Für die Requests benötigen Sie nur die [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API Dokumentation"). Am einfachsten ist es sich an die JSON Request Beispiele zu halten. Diese müssen nur als Array umgewandelt dem request übergeben werden.
+So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill Daten zugreifen und diese verarbeiten. Für die Requests benötigen Sie nur die [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API Dokumentation"). Am einfachsten ist es sich an die JSON Request Beispiele zu halten. Diese müssen nur in einen Array umgewandelt dem Request übergeben werden.
 
 
 
 ##Installation
 
-binden Sie die aktuellste Version ein und initialisieren Sie die fastbill-Klasse mit Ihrer Fastbill-Email und APIKey.
+Binden Sie die aktuellste Version ein und initialisieren Sie die fastbill-Klasse mit Ihrer Fastbill-Email und APIKey.
 
 ``` php
 require("fastbill.x.x.php");
 $fastbill = new fastbill("%Fastbill-Email%", "%Fastbill-APIKey%");
 ```
-Ersetzen Sie %Fastbill-Email% durch Ihre Fastbill-Email (z.B. max@mustermann.de) und %Fastbill-APIKey% durch Ihren Fastbill-APIKey (z.B. 1238751bd8714ciafnafv3afubafeGizQnudJHBzfaiusbwt48). Sollten Sie die Parameter vergessen oder diese Leer sein gibt new fastbill() False zurück.
+Ersetzen Sie **%Fastbill-Email%** durch Ihre Fastbill-Email (z.B. max@mustermann.de) und **%Fastbill-APIKey%** durch Ihren Fastbill-APIKey (z.B. 1238751bd8714ciafnafv3afubafeGizQnudJHBzfaiusbwt48). Sollten Sie die Parameter vergessen oder diese Leer sein gibt new fastbill() *False* zurück.
 
 
 
@@ -22,9 +22,9 @@ Ersetzen Sie %Fastbill-Email% durch Ihre Fastbill-Email (z.B. max@mustermann.de)
 ``` php
 $fastbill->request();
 ```
-Diese Klasse erwartet ein Array mit den Request Daten: Service, Filter, Limit, Offset und Data.
-Als Rückgabe erhalten Sie die Fastbill Antwort als Array.
-Sollte etwas nicht funktionieren erhalten Sie als Rückgabe False.
+Diese Klasse erwartet ein Array mit den Request Daten: *Service, Filter, Limit, Offset* und *Data*.
+Als Rückgabe erhalten Sie die Fastbill Antwort in einem Array.
+Sollte es zu Fehlern kommen, erhalten Sie als Rückgabe *False*.
 
 
 
