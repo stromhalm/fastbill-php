@@ -1,7 +1,7 @@
 #Fastbill
 
 Dies ist eine kleine Library für die Fastbill API.
-So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill Daten zugreifen und diese verarbeiten. Für die Requests benötigen Sie nur die [Fastbill-API Dokumentation](http://www.fastbill.com/api/, "Fastbill API Dokumentation"). Am einfachsten ist es sich an die JSON Request Beispiele zu halten. Diese müssen nur als Array umgewandelt dem request übergeben werden.
+So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill Daten zugreifen und diese verarbeiten. Für die Requests benötigen Sie nur die [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API Dokumentation"). Am einfachsten ist es sich an die JSON Request Beispiele zu halten. Diese müssen nur als Array umgewandelt dem request übergeben werden.
 
 
 
