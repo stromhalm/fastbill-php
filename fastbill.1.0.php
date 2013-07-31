@@ -1,8 +1,8 @@
 <?php
 
 /* ********************************************	*/
-/* Copyright: DIGITALSCHMIEDE			*/
-/* http://www.digitalschmiede.de		*/
+/*	Copyright: DIGITALSCHMIEDE		*/
+/*	http://www.digitalschmiede.de		*/
 /* ********************************************	*/
 
 class fastbill
