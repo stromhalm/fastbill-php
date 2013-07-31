@@ -2,7 +2,7 @@
 
 class fastbill
 {
-  private $email = '';
+	private $email = '';
 	private $apiKey = '';
 	private $apiUrl = 'https://portal.fastbill.com/api/1.0/api.php';
 	
