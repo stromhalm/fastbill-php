@@ -1,5 +1,10 @@
 <?php
 
+/* ********************************************	*/
+/* Copyright: DIGITALSCHMIEDE			*/
+/* http://www.digitalschmiede.de		*/
+/* ********************************************	*/
+
 class fastbill
 {
 	private $email = '';
