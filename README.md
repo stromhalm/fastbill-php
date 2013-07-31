@@ -1,7 +1,9 @@
 #Fastbill
 
 Dies ist eine kleine Library für die Fastbill API.
-So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill Daten zugreifen und diese verarbeiten. Für die Requests benötigen Sie nur die [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API Dokumentation"). Am einfachsten ist es sich an die JSON Request Beispiele zu halten. Diese müssen nur in einen Array umgewandelt dem Request übergeben werden.
+So können Sie mit wenigen Schritten und wenig Vorkenntnissen auf Ihre Fastbill-Daten zugreifen und diese verarbeiten. 
+
+Die [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API Dokumentation") finden Sie die Struktur der einzelnen Requests. Diese müssen in Form von Arrays an die Klasse übergeben werden. Am einfachsten ist es, sich an die **Request - JSON** Beispiele aus der Dokumentation zu halten.
 
 
 
@@ -29,6 +31,16 @@ Sollte es zu Fehlern kommen, erhalten Sie als Rückgabe *False*.
 
 
 ##Beispiele
+
+JSON in einen Array Wandeln:
+``` php
+// Mit der PHP-Funktion json_decode
+$JSON = '{ "SERVICE":"invoice.get", "FILTER": { "TYPE":"outgoing" }, "LIMIT":1 }';
+$array = json_decode($JSON);
+print_r($array);
+
+// Sie können auch, wie ich es in den kommenden Beispielen gemacht habe, das JSON per Hand in ein Array konvertieren.
+```
 
 Hier ein Beispiel für Rechnungen:
 ``` php
