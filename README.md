@@ -32,15 +32,6 @@ Sollte es zu Fehlern kommen, erhalten Sie als Rückgabe *False*.
 
 ##Beispiele
 
-JSON in einen Array Wandeln:
-``` php
-// Mit der PHP-Funktion json_decode
-$JSON = '{ "SERVICE":"invoice.get", "FILTER": { "TYPE":"outgoing" }, "LIMIT":1 }';
-$array = json_decode($JSON);
-print_r($array);
-
-// Sie können auch, wie ich es in den kommenden Beispielen gemacht habe, das JSON per Hand in ein Array konvertieren.
-```
 
 Hier ein Beispiel für Rechnungen:
 ``` php
