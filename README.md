@@ -15,7 +15,7 @@ Binden Sie die aktuellste Version ein und initialisieren Sie die fastbill-Klasse
 require("fastbill.x.x.php");
 $fastbill = new fastbill("%Fastbill-Email%", "%Fastbill-APIKey%");
 ```
-Ersetzen Sie **%Fastbill-Email%** durch Ihre Fastbill-E-Mail-Adresse (z.B. max@mustermann.de) und **%Fastbill-APIKey%** durch Ihren Fastbill-APIKey (z.B. 1238751bd8714ciafnafv3afubafeGizQnudJHBzfaiusbwt48). Sollten Sie die Parameter vergessen oder diese Leer sein gibt <code>new fastbill()</code> *False* zurück.
+Ersetzen Sie <code>%Fastbill-Email%</code> durch Ihre Fastbill-E-Mail-Adresse (z.B. *max@mustermann.de*) und <code>%Fastbill-APIKey%</code> durch Ihren Fastbill-APIKey (z.B. *1238751bd8714ciafnafv3afubafeGizQnudJHBzfaiusbwt48*). Sollten Sie die Parameter vergessen oder diese Leer sein gibt <code>new fastbill()</code> *False* zurück.
 
 
 
