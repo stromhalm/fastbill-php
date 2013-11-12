@@ -61,7 +61,7 @@ class fastbill
 					)
 					));
 					
-					$array = json_decode($JSON);
+					$array = json_decode($JSON, true);
 					return $array;
 				}
 				else
@@ -78,7 +78,7 @@ class fastbill
 					curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 					
 					$exec = curl_exec($ch);
-					$result = json_decode($exec);
+					$result = json_decode($exec, true);
 					
 					curl_close($ch);
 					
