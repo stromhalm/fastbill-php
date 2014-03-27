@@ -56,6 +56,7 @@
 	                curl_setopt($ch, CURLOPT_POST, 1);
 	                curl_setopt($ch, CURLOPT_POSTFIELDS, $bodyStr);
 	                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                	curl_setopt($ch, CURLOPT_ENCODING, 'gzip');
 	
 	                $exec = curl_exec($ch);
 	                $result = json_decode($exec,true);
