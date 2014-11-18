@@ -13,7 +13,7 @@ Binden Sie die aktuellste Version ein und initialisieren Sie die fastbill-Klasse
 
 ``` php
 require("fastbill.x.x.php");
-$fastbill = new fastbill(string $email, string $apiKey [, string $apiUrl = 'https://my.fastbill.com/api/1.0/api.php']);
+$fastbill = new fastbill(string $email, string $apiKey [, string $apiUrl = FASTBILL_PLUS]);
 ```
 Ersetzen Sie <code>$email</code> durch Ihre Fastbill-E-Mail-Adresse (z.B. *max@mustermann.de*) und <code>$apiKey</code> durch Ihren Fastbill-APIKey (z.B. *1238751bd8714ciafnafv3afubafeGizQnudJHBzfaiusbwt48*). Sollten Sie die Parameter vergessen oder diese Leer sein gibt <code>new fastbill()</code> *False* zurück.
 
