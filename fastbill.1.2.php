@@ -5,7 +5,7 @@
 /* ******************************************** */
 
 define('FASTBILL_PLUS',         'https://my.fastbill.com/api/1.0/api.php');
-define('FASTBILL_AUTOMATIC',    'http://devautomatic.fastbill.com/api/1.0/api.php');
+define('FASTBILL_AUTOMATIC',    'https://automatic.fastbill.com/api/1.0/api.php');
 
 class fastbill
 {
