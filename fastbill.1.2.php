@@ -101,7 +101,7 @@ class fastbill
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $bodyStr);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
                 curl_setopt($ch, CURLOPT_ENCODING, 'gzip');
-                curl_setopt($ch, CURLOPT_VERBOSE, 1);
+                curl_setopt($ch, CURLOPT_VERBOSE, ($this->debug ? 1 : 0));
 
                 $exec = curl_exec($ch);
 
@@ -124,4 +124,3 @@ class fastbill
         }
     }
 }
-?>
