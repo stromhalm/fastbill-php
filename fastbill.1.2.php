@@ -1,13 +1,16 @@
 <?php
 /* ******************************************** */
-/*  	Copyright: DIGITALSCHMIEDE		*/
-/*  	http://www.digitalschmiede.de		*/
+/*   Copyright: ZWEISCHNEIDER DIGITALSCHMIEDE   */
+/*         http://www.zweischneider.de          */
 /* ******************************************** */
+
+namespace FastBill;
 
 define('FASTBILL_PLUS',         'https://my.fastbill.com/api/1.0/api.php');
 define('FASTBILL_AUTOMATIC',    'https://automatic.fastbill.com/api/1.0/api.php');
 
-class fastbill
+
+class FastBill
 {
     private $email = '';
     private $apiKey = '';
