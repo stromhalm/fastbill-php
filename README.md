@@ -12,13 +12,20 @@ In der [Fastbill-API Dokumentation](http://www.fastbill.com/api/ "Fastbill API D
 Binden Sie die aktuellste Version ein und initialisieren Sie die fastbill-Klasse mit Ihrer Fastbill-Email und APIKey.
 
 ``` php
-require("fastbill.x.x.php");
-$fastbill = new fastbill(string $email, string $apiKey [, string $apiUrl = FASTBILL_PLUS]);
+require("FastBill.php");
+$fastbill = new \FastBill\FastBill(string $email, string $apiKey [, string $apiUrl = FASTBILL_PLUS]);
 ```
 Ersetzen Sie <code>$email</code> durch Ihre Fastbill-E-Mail-Adresse (z.B. *max@mustermann.de*) und <code>$apiKey</code> durch Ihren Fastbill-APIKey (z.B. *1238751bd8714ciafnafv3afubafeGizQnudJHBzfaiusbwt48*). Sollten Sie die Parameter vergessen oder diese Leer sein gibt <code>new fastbill()</code> *False* zurück.
 
 Optional können Sie als 3 Parameter die APIURL übergeben.
 
+Oder binden Sie den Wrapper über Composer ein:
+
+``` php
+{
+    "digitalschmiede/fastbill": "dev-master"
+}
+```
 
 ##Klassen
 
