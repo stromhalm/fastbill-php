@@ -97,7 +97,8 @@ class FastBill
 
                 if($_file != NULL) {
                     if (class_exists('CURLFile')) {
-                        $_curl_file = new CURLFile($_file, 'image/jpeg', 'test_name');
+                        $_finfo = finfo_open(FILEINFO_MIME_TYPE);
+                        $_curl_file = new CURLFile($_file, finfo_file($_finfo, $_file), substr(strrchr($_file, '/'), 1));
                     }
                     else {$_curl_file = "@".$_file;}
                     $bodyStr = array("document" => $_curl_file, "httpbody" => $data_string);
