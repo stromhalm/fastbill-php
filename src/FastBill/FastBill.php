@@ -95,7 +95,13 @@ class FastBill
 
                 $data_string = json_encode($_data);
 
-                if($_file != NULL) { $bodyStr = array("document" => "@".$_file, "httpbody" => $data_string); }
+                if($_file != NULL) {
+                    if (class_exists('CURLFile')) {
+                        $_curl_file = new CURLFile($_file, 'image/jpeg', 'test_name');
+                    }
+                    else {$_curl_file = "@".$_file;}
+                    $bodyStr = array("document" => $_curl_file, "httpbody" => $data_string);
+                }
                 else { $bodyStr = array("httpbody" => $data_string); }
 
                 curl_setopt($ch, CURLOPT_URL, $this->apiUrl);
