@@ -1,11 +1,11 @@
 {
-    "name": "digitalschmiede/fastbill",
+    "name": "zweischneider/fastbill",
     "description": "API Wrapper for the FastBill.com API",
     "license": "GNU V2",
     "authors": [
         {
-            "name": "DIGITALSCHMIEDE",
-            "email": "andreas@zweischneider.de"
+            "name": "ZWEISCHNEIDER GmbH & Co. KG",
+            "email": "info@zweischneider.de"
         }
     ],
     "minimum-stability": "dev",
