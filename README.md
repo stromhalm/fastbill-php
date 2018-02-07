@@ -23,7 +23,7 @@ Oder binden Sie den Wrapper über Composer ein:
 
 ``` php
 {
-    "digitalschmiede/fastbill": "dev-master"
+    "zweischneider/fastbill": "dev-master"
 }
 ```
 
