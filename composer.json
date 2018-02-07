@@ -1,7 +1,7 @@
 {
     "name": "zweischneider/fastbill",
     "description": "API Wrapper for the FastBill.com API",
-    "license": "GNU V2",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "ZWEISCHNEIDER GmbH & Co. KG",
