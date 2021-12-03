@@ -1,5 +1,5 @@
 {
-    "name": "zweischneider/fastbill",
+    "name": "stromhalm/fastbill-php",
     "description": "API Wrapper for the FastBill.com API",
     "license": "GPL-2.0-or-later",
     "authors": [
